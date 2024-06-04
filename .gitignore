@@ -1,0 +1,5 @@
+# Ignore files and directories in the .vs folder
+.vs/
+# Ignore Visual Studio files and folder (包括项目的用户特定设置文件）
+*.user
+*.sln.docstates
