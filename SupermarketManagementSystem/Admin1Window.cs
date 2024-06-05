@@ -16,5 +16,11 @@ namespace SupermarketManagementSystem
         {
             InitializeComponent();
         }
+
+        private void 商品管理ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Admin2Window goodsWindow = new Admin2Window();
+            goodsWindow.ShowDialog();
+        }
     }
 }

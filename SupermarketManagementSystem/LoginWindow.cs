@@ -39,7 +39,7 @@ namespace SupermarketManagementSystem
             if(radioButtonUser.Checked == true)                                     //员工权限
             {
                 string sql = $"select * from t_User where UserID = '{textBox1.Text}' and Password = '{textBox2.Text}';";
-                DBConnect example = new DBConnect();
+                DBHandle example = new DBHandle();
                 IDataReader data = example.Read(sql);                               //根据sql语句从库中读取数据（读出符合条件的那一行：我们设置了主键，故只有一行完全匹配）
                 if (data.Read())
                 {
@@ -61,7 +61,7 @@ namespace SupermarketManagementSystem
             if(radioButtonAdmin.Checked == true)                                    //管理员权限
             {
                 string sql = $"select * from t_Admin where UserID = '{textBox1.Text}' and Password = '{textBox2.Text}';";
-                DBConnect example = new DBConnect();
+                DBHandle example = new DBHandle();
                 IDataReader data = example.Read(sql);                               //根据条件从库中读取数据
                 if (data.Read())
                 {

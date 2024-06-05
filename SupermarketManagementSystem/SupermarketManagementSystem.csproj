@@ -52,8 +52,26 @@
     <Compile Include="Admin1Window.Designer.cs">
       <DependentUpon>Admin1Window.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin2Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin2Window.Designer.cs">
+      <DependentUpon>Admin2Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin2_1Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin2_1Window.Designer.cs">
+      <DependentUpon>Admin2_1Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin2_2Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin2_2Window.Designer.cs">
+      <DependentUpon>Admin2_2Window.cs</DependentUpon>
+    </Compile>
     <Compile Include="Data.cs" />
-    <Compile Include="DBConnect.cs" />
+    <Compile Include="DBHandle.cs" />
     <Compile Include="LoginWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +88,15 @@
     </Compile>
     <EmbeddedResource Include="Admin1Window.resx">
       <DependentUpon>Admin1Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin2Window.resx">
+      <DependentUpon>Admin2Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin2_1Window.resx">
+      <DependentUpon>Admin2_1Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin2_2Window.resx">
+      <DependentUpon>Admin2_2Window.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginWindow.resx">
       <DependentUpon>LoginWindow.cs</DependentUpon>

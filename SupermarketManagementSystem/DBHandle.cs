@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SupermarketManagementSystem
 {
-    class DBConnect
+    class DBHandle
     {
         SqlConnection sc;
         public SqlConnection Connect()                                  //建立数据库连接

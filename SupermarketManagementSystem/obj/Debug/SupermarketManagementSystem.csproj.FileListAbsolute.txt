@@ -10,3 +10,6 @@ E:\VS\SupermarketManagementSystem\SupermarketManagementSystem\obj\Debug\Supermar
 E:\VS\SupermarketManagementSystem\SupermarketManagementSystem\obj\Debug\SupermarketManagementSystem.csproj.CoreCompileInputs.cache
 E:\VS\SupermarketManagementSystem\SupermarketManagementSystem\obj\Debug\SupermarketManagementSystem.exe
 E:\VS\SupermarketManagementSystem\SupermarketManagementSystem\obj\Debug\SupermarketManagementSystem.pdb
+E:\VS\SupermarketManagementSystem\SupermarketManagementSystem\obj\Debug\SupermarketManagementSystem.Admin2Window.resources
+E:\VS\SupermarketManagementSystem\SupermarketManagementSystem\obj\Debug\SupermarketManagementSystem.Admin2_1Window.resources
+E:\VS\SupermarketManagementSystem\SupermarketManagementSystem\obj\Debug\SupermarketManagementSystem.Admin2_2Window.resources

@@ -42,10 +42,10 @@ namespace SupermarketManagementSystem
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("微软雅黑", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(350, 91);
+            this.label1.Font = new System.Drawing.Font("微软雅黑", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.Location = new System.Drawing.Point(305, 81);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(249, 38);
+            this.label1.Size = new System.Drawing.Size(411, 62);
             this.label1.TabIndex = 0;
             this.label1.Text = "超市销售管理系统";
             // 
@@ -53,7 +53,7 @@ namespace SupermarketManagementSystem
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(292, 209);
+            this.label2.Location = new System.Drawing.Point(312, 209);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(59, 21);
             this.label2.TabIndex = 1;
@@ -63,7 +63,7 @@ namespace SupermarketManagementSystem
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.Location = new System.Drawing.Point(293, 281);
+            this.label3.Location = new System.Drawing.Point(312, 281);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(42, 21);
             this.label3.TabIndex = 2;
@@ -102,7 +102,7 @@ namespace SupermarketManagementSystem
             // 
             this.radioButtonAdmin.AutoSize = true;
             this.radioButtonAdmin.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.radioButtonAdmin.Location = new System.Drawing.Point(562, 348);
+            this.radioButtonAdmin.Location = new System.Drawing.Point(522, 348);
             this.radioButtonAdmin.Name = "radioButtonAdmin";
             this.radioButtonAdmin.Size = new System.Drawing.Size(76, 25);
             this.radioButtonAdmin.TabIndex = 6;
@@ -113,9 +113,9 @@ namespace SupermarketManagementSystem
             // 
             this.button1.BackColor = System.Drawing.SystemColors.Control;
             this.button1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button1.Location = new System.Drawing.Point(367, 427);
+            this.button1.Location = new System.Drawing.Point(369, 410);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(178, 32);
+            this.button1.Size = new System.Drawing.Size(212, 36);
             this.button1.TabIndex = 7;
             this.button1.Text = "登录";
             this.button1.UseVisualStyleBackColor = false;
