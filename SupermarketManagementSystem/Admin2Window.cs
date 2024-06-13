@@ -22,27 +22,12 @@ namespace SupermarketManagementSystem
             label4.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();      //默认选中的表格行在载入窗口时就对label4的值进行初始化（使用第一行的ID来初始化）
         }
 
-        //从对应数据库中的商品表中读取数据，用于呈现
-        public void Table()
-        {
-            dataGridView1.Rows.Clear();                                                 //用于窗口循环中刷新更改后的数据
-
-            string sql = "select * from t_Goods;";
-            DBHandle example = new DBHandle();
-            IDataReader data = example.Read(sql);
-            while (data.Read())
-            {
-                dataGridView1.Rows.Add(data[0].ToString(), data[1].ToString(), data[2].ToString(), data[3].ToString());
-                // ------------------------ ID--------------- Name ------------------ Price ----------- Stock -----------
-            }
-            data.Close();
-            example.Close();
-        }
-
         private void button1_Click(object sender, EventArgs e)                      //“上架商品”
         {
             Admin2_1Window addGoodsWindow = new Admin2_1Window();
             addGoodsWindow.ShowDialog();                                            //创建按键后显示的窗口并呈现
+            //Admin2_2Window stockWindow = new Admin2_2Window();
+            //stockWindow.ShowDialog();
         }
         private void button2_Click(object sender, EventArgs e)                      //“下架商品”
         {
@@ -66,26 +51,39 @@ namespace SupermarketManagementSystem
             }
             #endregion
         }
-        private void button3_Click(object sender, EventArgs e)                      //“修改商品”
-        {
-            try
-            {
-                string id    = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
-                string name  = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
-                string price = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
-                string stock = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
-                Admin2_2Window changeGoodsWindow = new Admin2_2Window(id, name, price, stock);
-                changeGoodsWindow.ShowDialog();
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show($"请选中待修改的商品数据，\n错误：{ex.Message}", "修改", MessageBoxButtons.OK, MessageBoxIcon.Warning );
-            }
-        }
+        //private void button3_Click(object sender, EventArgs e)                      //“修改商品”
+        //{
+        //    try
+        //    {
+        //        string id    = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+        //        string name  = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+        //        string price = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+        //        string stock = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
+        //        Admin4_2Window changeGoodsWindow = new Admin4_2Window(id, name, price, stock);
+        //        changeGoodsWindow.ShowDialog();
+        //    }
+        //    catch(Exception ex)
+        //    {
+        //        MessageBox.Show($"请选中待修改的商品数据，\n错误：{ex.Message}", "修改", MessageBoxButtons.OK, MessageBoxIcon.Warning );
+        //    }
+        //}
 
         private void button4_Click(object sender, EventArgs e)                      //“刷新” 刷新操作（在更新之后再查一次实现更新）
         {
             Table();
+        }
+        private void button5_Click(object sender, EventArgs e)
+        {
+            #region 根据商品编号查询的实现
+            TableID();
+            #endregion
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            #region 根据商品名称查询的实现
+            TableName();
+            #endregion
         }
 
         // 获取表格中选中格的部分数据，与窗口中的 lable4 “当前选中商品” 同步.
@@ -94,5 +92,54 @@ namespace SupermarketManagementSystem
             label4.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
         }
 
+        // --------------------------------------------------------------------------------------------------------------
+        //从对应数据库中的商品表中读取数据，用于呈现
+        public void Table()
+        {
+            dataGridView1.Rows.Clear();                                                 //用于窗口循环中刷新更改后的数据
+
+            string sql = "select * from t_Goods;";
+            DBHandle example = new DBHandle();
+            IDataReader data = example.Read(sql);
+            while (data.Read())
+            {
+                dataGridView1.Rows.Add(data[0].ToString(), data[1].ToString(), data[2].ToString(), data[3].ToString());
+                // ------------------------ ID--------------- Name ------------------ Price ----------- Stock -----------
+            }
+            data.Close();
+            example.Close();
+        }
+        public void TableID()
+        {
+            dataGridView1.Rows.Clear();
+
+            string sql = $"select * from t_Goods where ID = '{textBox1.Text}'";
+            DBHandle example = new DBHandle();
+            IDataReader data = example.Read(sql);
+            while (data.Read())
+            {
+                dataGridView1.Rows.Add(data[0].ToString(), data[1].ToString(), data[2].ToString(), data[3].ToString());
+            }
+            data.Close();
+            example.Close();
+
+            textBox1.Text = "";                                                         //查询之后清空输入框
+        }
+        public void TableName()
+        {
+            dataGridView1.Rows.Clear();
+
+            string sql = $"select * from t_Goods where Name like '%{textBox2.Text}%'";
+            DBHandle example = new DBHandle();
+            IDataReader data = example.Read(sql);
+            while (data.Read())
+            {
+                dataGridView1.Rows.Add(data[0].ToString(), data[1].ToString(), data[2].ToString(), data[3].ToString());
+            }
+            data.Close();
+            example.Close();
+
+            textBox1.Text = "";                                                         //查询之后清空输入框
+        }
     }
 }

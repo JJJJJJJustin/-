@@ -29,6 +29,7 @@ namespace SupermarketManagementSystem
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -37,13 +38,20 @@ namespace SupermarketManagementSystem
             this.radioButtonUser = new System.Windows.Forms.RadioButton();
             this.radioButtonAdmin = new System.Windows.Forms.RadioButton();
             this.button1 = new System.Windows.Forms.Button();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.帮助SeeMoreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.设计流程ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.支持ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("微软雅黑", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(305, 81);
+            this.label1.Location = new System.Drawing.Point(281, 83);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(411, 62);
             this.label1.TabIndex = 0;
@@ -53,7 +61,7 @@ namespace SupermarketManagementSystem
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(312, 209);
+            this.label2.Location = new System.Drawing.Point(288, 211);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(59, 21);
             this.label2.TabIndex = 1;
@@ -63,7 +71,7 @@ namespace SupermarketManagementSystem
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.Location = new System.Drawing.Point(312, 281);
+            this.label3.Location = new System.Drawing.Point(288, 283);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(42, 21);
             this.label3.TabIndex = 2;
@@ -72,7 +80,7 @@ namespace SupermarketManagementSystem
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox1.Location = new System.Drawing.Point(386, 206);
+            this.textBox1.Location = new System.Drawing.Point(362, 208);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(271, 29);
             this.textBox1.TabIndex = 3;
@@ -80,7 +88,7 @@ namespace SupermarketManagementSystem
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox2.Location = new System.Drawing.Point(386, 278);
+            this.textBox2.Location = new System.Drawing.Point(362, 280);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(271, 29);
             this.textBox2.TabIndex = 4;
@@ -90,19 +98,19 @@ namespace SupermarketManagementSystem
             this.radioButtonUser.AutoSize = true;
             this.radioButtonUser.Checked = true;
             this.radioButtonUser.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.radioButtonUser.Location = new System.Drawing.Point(386, 348);
+            this.radioButtonUser.Location = new System.Drawing.Point(362, 350);
             this.radioButtonUser.Name = "radioButtonUser";
             this.radioButtonUser.Size = new System.Drawing.Size(60, 25);
             this.radioButtonUser.TabIndex = 5;
             this.radioButtonUser.TabStop = true;
-            this.radioButtonUser.Text = "用户";
+            this.radioButtonUser.Text = "员工";
             this.radioButtonUser.UseVisualStyleBackColor = true;
             // 
             // radioButtonAdmin
             // 
             this.radioButtonAdmin.AutoSize = true;
             this.radioButtonAdmin.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.radioButtonAdmin.Location = new System.Drawing.Point(522, 348);
+            this.radioButtonAdmin.Location = new System.Drawing.Point(498, 350);
             this.radioButtonAdmin.Name = "radioButtonAdmin";
             this.radioButtonAdmin.Size = new System.Drawing.Size(76, 25);
             this.radioButtonAdmin.TabIndex = 6;
@@ -113,7 +121,7 @@ namespace SupermarketManagementSystem
             // 
             this.button1.BackColor = System.Drawing.SystemColors.Control;
             this.button1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button1.Location = new System.Drawing.Point(369, 410);
+            this.button1.Location = new System.Drawing.Point(345, 412);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(212, 36);
             this.button1.TabIndex = 7;
@@ -121,11 +129,61 @@ namespace SupermarketManagementSystem
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.dateTimePicker1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dateTimePicker1.Location = new System.Drawing.Point(784, 4);
+            this.dateTimePicker1.MaxDate = new System.DateTime(2029, 6, 7, 0, 0, 0, 0);
+            this.dateTimePicker1.MinDate = new System.DateTime(1949, 10, 1, 0, 0, 0, 0);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(125, 21);
+            this.dateTimePicker1.TabIndex = 8;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.帮助SeeMoreToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(921, 25);
+            this.menuStrip1.TabIndex = 9;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // 帮助SeeMoreToolStripMenuItem
+            // 
+            this.帮助SeeMoreToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.设计流程ToolStripMenuItem,
+            this.支持ToolStripMenuItem});
+            this.帮助SeeMoreToolStripMenuItem.Name = "帮助SeeMoreToolStripMenuItem";
+            this.帮助SeeMoreToolStripMenuItem.Size = new System.Drawing.Size(124, 21);
+            this.帮助SeeMoreToolStripMenuItem.Text = "帮助（See more）";
+            // 
+            // 设计流程ToolStripMenuItem
+            // 
+            this.设计流程ToolStripMenuItem.Name = "设计流程ToolStripMenuItem";
+            this.设计流程ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.设计流程ToolStripMenuItem.Text = "设计流程";
+            this.设计流程ToolStripMenuItem.Click += new System.EventHandler(this.设计流程ToolStripMenuItem_Click);
+            // 
+            // 支持ToolStripMenuItem
+            // 
+            this.支持ToolStripMenuItem.Name = "支持ToolStripMenuItem";
+            this.支持ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.支持ToolStripMenuItem.Text = "支持";
+            this.支持ToolStripMenuItem.Click += new System.EventHandler(this.支持ToolStripMenuItem_Click);
+            // 
+            // notifyIcon1
+            // 
+            this.notifyIcon1.Text = "notifyIcon1";
+            this.notifyIcon1.Visible = true;
+            // 
             // LoginWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(921, 531);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.radioButtonAdmin);
             this.Controls.Add(this.radioButtonUser);
@@ -134,10 +192,14 @@ namespace SupermarketManagementSystem
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "LoginWindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "管理系统登录";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -153,6 +215,12 @@ namespace SupermarketManagementSystem
         private System.Windows.Forms.RadioButton radioButtonUser;
         private System.Windows.Forms.RadioButton radioButtonAdmin;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem 帮助SeeMoreToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 设计流程ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 支持ToolStripMenuItem;
+        private System.Windows.Forms.NotifyIcon notifyIcon1;
     }
 }
 

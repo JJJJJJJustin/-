@@ -35,6 +35,7 @@ namespace SupermarketManagementSystem
             this.员工管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.帮助ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
+            this.货物库存管理toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -42,6 +43,7 @@ namespace SupermarketManagementSystem
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.管理员信息ToolStripMenuItem,
+            this.货物库存管理toolStripMenuItem1,
             this.商品管理ToolStripMenuItem,
             this.员工管理ToolStripMenuItem,
             this.帮助ToolStripMenuItem});
@@ -56,6 +58,7 @@ namespace SupermarketManagementSystem
             this.管理员信息ToolStripMenuItem.Name = "管理员信息ToolStripMenuItem";
             this.管理员信息ToolStripMenuItem.Size = new System.Drawing.Size(80, 21);
             this.管理员信息ToolStripMenuItem.Text = "管理员信息";
+            this.管理员信息ToolStripMenuItem.Click += new System.EventHandler(this.管理员信息ToolStripMenuItem_Click);
             // 
             // 商品管理ToolStripMenuItem
             // 
@@ -69,12 +72,14 @@ namespace SupermarketManagementSystem
             this.员工管理ToolStripMenuItem.Name = "员工管理ToolStripMenuItem";
             this.员工管理ToolStripMenuItem.Size = new System.Drawing.Size(68, 21);
             this.员工管理ToolStripMenuItem.Text = "员工管理";
+            this.员工管理ToolStripMenuItem.Click += new System.EventHandler(this.员工管理ToolStripMenuItem_Click);
             // 
             // 帮助ToolStripMenuItem
             // 
             this.帮助ToolStripMenuItem.Name = "帮助ToolStripMenuItem";
             this.帮助ToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
             this.帮助ToolStripMenuItem.Text = "帮助";
+            this.帮助ToolStripMenuItem.Click += new System.EventHandler(this.帮助ToolStripMenuItem_Click);
             // 
             // label1
             // 
@@ -85,6 +90,13 @@ namespace SupermarketManagementSystem
             this.label1.Size = new System.Drawing.Size(459, 62);
             this.label1.TabIndex = 1;
             this.label1.Text = "欢迎使用管理员窗口";
+            // 
+            // 货物库存管理toolStripMenuItem1
+            // 
+            this.货物库存管理toolStripMenuItem1.Name = "货物库存管理toolStripMenuItem1";
+            this.货物库存管理toolStripMenuItem1.Size = new System.Drawing.Size(92, 21);
+            this.货物库存管理toolStripMenuItem1.Text = "货物库存管理";
+            this.货物库存管理toolStripMenuItem1.Click += new System.EventHandler(this.货物库存管理toolStripMenuItem1_Click);
             // 
             // Admin1Window
             // 
@@ -112,5 +124,6 @@ namespace SupermarketManagementSystem
         private System.Windows.Forms.ToolStripMenuItem 员工管理ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 帮助ToolStripMenuItem;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ToolStripMenuItem 货物库存管理toolStripMenuItem1;
     }
 }

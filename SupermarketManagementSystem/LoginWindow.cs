@@ -65,6 +65,8 @@ namespace SupermarketManagementSystem
                 IDataReader data = example.Read(sql);                               //根据条件从库中读取数据
                 if (data.Read())
                 {
+                    Data.UID = data["UserID"].ToString();                           //从data（DBConnect读出的IDataReader类）的数据给 Data类中的成员变量读入数据
+                    
                     MessageBox.Show("登录成功");
                     Admin1Window admin = new Admin1Window();
                     this.Hide();
@@ -77,6 +79,18 @@ namespace SupermarketManagementSystem
                 }
                 data.Close();                                                       //关闭
             }
+        }
+
+        private void 设计流程ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LoginHelp1Window HelpWindow = new LoginHelp1Window();
+            HelpWindow.ShowDialog();
+        }
+
+        private void 支持ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LoginHelp2Window HelpWindow2 = new LoginHelp2Window();
+            HelpWindow2.ShowDialog();
         }
     }
 }

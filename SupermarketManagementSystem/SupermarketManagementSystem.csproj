@@ -70,8 +70,44 @@
     <Compile Include="Admin2_2Window.Designer.cs">
       <DependentUpon>Admin2_2Window.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin4_1Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin4_1Window.Designer.cs">
+      <DependentUpon>Admin4_1Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin4_2Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin4_2Window.Designer.cs">
+      <DependentUpon>Admin4_2Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin3Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin3Window.Designer.cs">
+      <DependentUpon>Admin3Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin4Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin4Window.Designer.cs">
+      <DependentUpon>Admin4Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin4_3Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin4_3Window.Designer.cs">
+      <DependentUpon>Admin4_3Window.cs</DependentUpon>
+    </Compile>
     <Compile Include="Data.cs" />
     <Compile Include="DBHandle.cs" />
+    <Compile Include="LoginHelp2Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginHelp2Window.Designer.cs">
+      <DependentUpon>LoginHelp2Window.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,11 +116,53 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User1Help3Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User1Help3Window.Designer.cs">
+      <DependentUpon>User1Help3Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User1Help2Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User1Help2Window.Designer.cs">
+      <DependentUpon>User1Help2Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User1Help1Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User1Help1Window.Designer.cs">
+      <DependentUpon>User1Help1Window.cs</DependentUpon>
+    </Compile>
     <Compile Include="User1Window.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="User1Window.Designer.cs">
       <DependentUpon>User1Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User2Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User2Window.Designer.cs">
+      <DependentUpon>User2Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User3Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User3Window.Designer.cs">
+      <DependentUpon>User3Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User4Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User4Window.Designer.cs">
+      <DependentUpon>User4Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginHelp1Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginHelp1Window.Designer.cs">
+      <DependentUpon>LoginHelp1Window.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Admin1Window.resx">
       <DependentUpon>Admin1Window.cs</DependentUpon>
@@ -98,6 +176,24 @@
     <EmbeddedResource Include="Admin2_2Window.resx">
       <DependentUpon>Admin2_2Window.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Admin4_1Window.resx">
+      <DependentUpon>Admin4_1Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin4_2Window.resx">
+      <DependentUpon>Admin4_2Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin3Window.resx">
+      <DependentUpon>Admin3Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin4Window.resx">
+      <DependentUpon>Admin4Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin4_3Window.resx">
+      <DependentUpon>Admin4_3Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginHelp2Window.resx">
+      <DependentUpon>LoginHelp2Window.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginWindow.resx">
       <DependentUpon>LoginWindow.cs</DependentUpon>
     </EmbeddedResource>
@@ -109,9 +205,31 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="User1Help2Window.resx">
+      <DependentUpon>User1Help2Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User1Help1Window.resx">
+      <DependentUpon>User1Help1Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User1Help3Window.resx">
+      <DependentUpon>User1Help3Window.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="User1Window.resx">
       <DependentUpon>User1Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User2Window.resx">
+      <DependentUpon>User2Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User3Window.resx">
+      <DependentUpon>User3Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User4Window.resx">
+      <DependentUpon>User4Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginHelp1Window.resx">
+      <DependentUpon>LoginHelp1Window.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -125,6 +243,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man_in_dark.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Keyboard.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
