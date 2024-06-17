@@ -92,5 +92,29 @@ namespace SupermarketManagementSystem
             LoginHelp2Window HelpWindow2 = new LoginHelp2Window();
             HelpWindow2.ShowDialog();
         }
+
+        private void 小游戏ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LittleGame gameWindow = new LittleGame();
+            gameWindow.ShowDialog();
+        }
+
+        private void c窗体资料ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LoginHelp3_1Window window = new LoginHelp3_1Window();
+            window.ShowDialog();
+        }
+
+        private void c窗体简单用例ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LoginHelp3_2Window window = new LoginHelp3_2Window();
+            window.ShowDialog();
+        }
+
+        private void c控件ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LoginHelp3_3Window window = new LoginHelp3_3Window();
+            window.ShowDialog();
+        }
     }
 }

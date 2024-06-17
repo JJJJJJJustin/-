@@ -76,6 +76,18 @@
     <Compile Include="Admin4_1Window.Designer.cs">
       <DependentUpon>Admin4_1Window.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin4_1_1Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin4_1_1Window.Designer.cs">
+      <DependentUpon>Admin4_1_1Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin4_1_2Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin4_1_2Window.Designer.cs">
+      <DependentUpon>Admin4_1_2Window.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin4_2Window.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,11 +114,35 @@
     </Compile>
     <Compile Include="Data.cs" />
     <Compile Include="DBHandle.cs" />
+    <Compile Include="LittleGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LittleGame.Designer.cs">
+      <DependentUpon>LittleGame.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginHelp2Window.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LoginHelp2Window.Designer.cs">
       <DependentUpon>LoginHelp2Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginHelp3_1Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginHelp3_1Window.Designer.cs">
+      <DependentUpon>LoginHelp3_1Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginHelp3_2Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginHelp3_2Window.Designer.cs">
+      <DependentUpon>LoginHelp3_2Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginHelp3_3Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginHelp3_3Window.Designer.cs">
+      <DependentUpon>LoginHelp3_3Window.cs</DependentUpon>
     </Compile>
     <Compile Include="LoginWindow.cs">
       <SubType>Form</SubType>
@@ -179,6 +215,12 @@
     <EmbeddedResource Include="Admin4_1Window.resx">
       <DependentUpon>Admin4_1Window.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Admin4_1_1Window.resx">
+      <DependentUpon>Admin4_1_1Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin4_1_2Window.resx">
+      <DependentUpon>Admin4_1_2Window.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin4_2Window.resx">
       <DependentUpon>Admin4_2Window.cs</DependentUpon>
     </EmbeddedResource>
@@ -191,8 +233,20 @@
     <EmbeddedResource Include="Admin4_3Window.resx">
       <DependentUpon>Admin4_3Window.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LittleGame.resx">
+      <DependentUpon>LittleGame.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginHelp2Window.resx">
       <DependentUpon>LoginHelp2Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginHelp3_1Window.resx">
+      <DependentUpon>LoginHelp3_1Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginHelp3_2Window.resx">
+      <DependentUpon>LoginHelp3_2Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginHelp3_3Window.resx">
+      <DependentUpon>LoginHelp3_3Window.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginWindow.resx">
       <DependentUpon>LoginWindow.cs</DependentUpon>
@@ -249,6 +303,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Keyboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Vender\Uesr.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Vender\User.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Vender\GitUser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Vender\Man.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Vender\Home.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

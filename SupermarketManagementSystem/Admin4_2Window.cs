@@ -25,7 +25,10 @@ namespace SupermarketManagementSystem
             textBox2.Text = name;
             textBox3.Text = price;
             textBox4.Text = supplier;
-            label7.Text = $"ID: {id},Name:{name},Supplier{supplier},Price:{price},      Stock:{stock}";
+            label7.Text  = $"ID: {id}";
+            label9.Text  = $"Name:{name}";
+            label10.Text = $"Supplier{supplier}";
+            label11.Text = $"Price:{price}";
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -50,5 +53,6 @@ namespace SupermarketManagementSystem
         // ---------------------------------------------------
         private string m_Id;
         private int m_Executed;
+
     }
 }

@@ -82,9 +82,18 @@ namespace SupermarketManagementSystem
             {
                 string orderId = dataGridView2.Rows[i].Cells[0].Value.ToString();
                 string goodId  = dataGridView2.Rows[i].Cells[1].Value.ToString();
-                string sql = $"delete from t_Order where OrderID = '{orderId}' and GoodID = '{goodId}';" +
-                             $"update t_Goods set Stock=Stock+1 where ID = '{goodId}';" +
-                             $"update t_Stock set Stock=Stock+1 where ID = '{goodId}';";
+                string sql =
+                    $"WITH CTE AS (" +
+                        $"SELECT OrderID, GoodID, Date, Price, " +
+                            $"ROW_NUMBER() OVER (PARTITION BY OrderID, GoodID ORDER BY Date) AS RowNum " +
+                        $"FROM t_Order WHERE OrderID = '{orderId}' AND GoodID = '{goodId}'" +
+                    $") " +
+                    $"DELETE t FROM t_Order t INNER JOIN CTE ON " +
+                        $"t.OrderID = CTE.OrderID AND t.GoodID = CTE.GoodID AND t.Date = CTE.Date AND t.Price = CTE.Price " +
+                    $"WHERE CTE.RowNum = 1; " +
+                    $"UPDATE t_Goods SET Stock=Stock+1 WHERE ID = '{goodId}'; " +
+                    $"UPDATE t_Stock SET Stock=Stock+1 WHERE ID = '{goodId}';";
+
                 if (example.Execute(sql) > 1)
                     PriceSum += float.Parse(dataGridView2.Rows[i].Cells[3].Value.ToString());
                 else

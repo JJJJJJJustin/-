@@ -50,7 +50,7 @@ namespace SupermarketManagementSystem
             for (int i = 0; i <= rowCount - 1; i++)                                             //将购物车中每一行部分数据添加进订单表，并更新商品表中库存 stock
             {
                 string id   = dataGridView2.Rows[i].Cells[0].Value.ToString();
-                string name = dataGridView2.SelectedRows[0].Cells[1].Value.ToString();
+                string name = dataGridView2.Rows[i].Cells[1].Value.ToString();
                 float price = float.Parse(dataGridView2.Rows[i].Cells[2].Value.ToString());
                 int stock   = int.Parse(dataGridView1.SelectedRows[0].Cells[2].Value.ToString());
                 string sql = $"insert into t_Goods (ID, Name, Price, Stock) values ('{id}', '{name}', {price}, {stock});" ;
@@ -105,8 +105,11 @@ namespace SupermarketManagementSystem
             }
             data.Close();
             example.Close();
+
+            dataGridView1.Sort(dataGridView1.Columns[0], ListSortDirection.Ascending);          // 对表格数据按照第一列升序排序
             #endregion
         }
+
     }
 
 }

@@ -44,6 +44,11 @@ namespace SupermarketManagementSystem
             this.设计流程ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.支持ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.小游戏ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.c学习文档ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.c窗体资料ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.c窗体简单用例ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.c控件ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -143,7 +148,9 @@ namespace SupermarketManagementSystem
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.帮助SeeMoreToolStripMenuItem});
+            this.帮助SeeMoreToolStripMenuItem,
+            this.小游戏ToolStripMenuItem,
+            this.c学习文档ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(921, 25);
@@ -177,6 +184,44 @@ namespace SupermarketManagementSystem
             // 
             this.notifyIcon1.Text = "notifyIcon1";
             this.notifyIcon1.Visible = true;
+            // 
+            // 小游戏ToolStripMenuItem
+            // 
+            this.小游戏ToolStripMenuItem.Name = "小游戏ToolStripMenuItem";
+            this.小游戏ToolStripMenuItem.Size = new System.Drawing.Size(80, 21);
+            this.小游戏ToolStripMenuItem.Text = "摸鱼小游戏";
+            this.小游戏ToolStripMenuItem.Click += new System.EventHandler(this.小游戏ToolStripMenuItem_Click);
+            // 
+            // c学习文档ToolStripMenuItem
+            // 
+            this.c学习文档ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.c窗体资料ToolStripMenuItem,
+            this.c窗体简单用例ToolStripMenuItem,
+            this.c控件ToolStripMenuItem});
+            this.c学习文档ToolStripMenuItem.Name = "c学习文档ToolStripMenuItem";
+            this.c学习文档ToolStripMenuItem.Size = new System.Drawing.Size(84, 21);
+            this.c学习文档ToolStripMenuItem.Text = "C#学习文档";
+            // 
+            // c窗体资料ToolStripMenuItem
+            // 
+            this.c窗体资料ToolStripMenuItem.Name = "c窗体资料ToolStripMenuItem";
+            this.c窗体资料ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.c窗体资料ToolStripMenuItem.Text = "C#窗体资料";
+            this.c窗体资料ToolStripMenuItem.Click += new System.EventHandler(this.c窗体资料ToolStripMenuItem_Click);
+            // 
+            // c窗体简单用例ToolStripMenuItem
+            // 
+            this.c窗体简单用例ToolStripMenuItem.Name = "c窗体简单用例ToolStripMenuItem";
+            this.c窗体简单用例ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.c窗体简单用例ToolStripMenuItem.Text = "C#窗体简单用例";
+            this.c窗体简单用例ToolStripMenuItem.Click += new System.EventHandler(this.c窗体简单用例ToolStripMenuItem_Click);
+            // 
+            // c控件ToolStripMenuItem
+            // 
+            this.c控件ToolStripMenuItem.Name = "c控件ToolStripMenuItem";
+            this.c控件ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.c控件ToolStripMenuItem.Text = "C#控件";
+            this.c控件ToolStripMenuItem.Click += new System.EventHandler(this.c控件ToolStripMenuItem_Click);
             // 
             // LoginWindow
             // 
@@ -221,6 +266,11 @@ namespace SupermarketManagementSystem
         private System.Windows.Forms.ToolStripMenuItem 设计流程ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 支持ToolStripMenuItem;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
+        private System.Windows.Forms.ToolStripMenuItem 小游戏ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem c学习文档ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem c窗体资料ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem c窗体简单用例ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem c控件ToolStripMenuItem;
     }
 }
 

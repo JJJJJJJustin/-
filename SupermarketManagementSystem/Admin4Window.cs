@@ -19,17 +19,22 @@ namespace SupermarketManagementSystem
         private void Admin4Window_Load(object sender, EventArgs e)
         {
             Table();
+            
+            if (dataGridView1.Rows.Count > 0)                                           // 如果表格中有数据，则选中第一行
+                dataGridView1.Rows[0].Selected = true;
             label4.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();      //默认选中的表格行在载入窗口时就对label4的值进行初始化（使用第一行的ID来初始化）
         }
 
 
-        private void button1_Click(object sender, EventArgs e)                      //“上架商品”
+        private void button1_Click(object sender, EventArgs e)                          //“上架商品”
         {
-            Admin4_1Window addGoodsWindow = new Admin4_1Window();
+            string lastId = dataGridView1.Rows[dataGridView1.Rows.Count - 1].Cells[0].Value.ToString(); //表格的最后一个ID
+
+            Admin4_1Window addGoodsWindow = new Admin4_1Window(lastId);
             addGoodsWindow.ShowDialog();                                                  //创建按键后显示的窗口并呈现
             Table();
         }
-        private void button2_Click(object sender, EventArgs e)                      //“下架商品”
+        private void button2_Click(object sender, EventArgs e)                              //“下架商品”
         {
             #region 删除功能代码实现
             try
@@ -124,6 +129,9 @@ namespace SupermarketManagementSystem
             }
             data.Close();
             example.Close();
+
+            // 对表格数据按照第一列升序排序
+            dataGridView1.Sort(dataGridView1.Columns[0], ListSortDirection.Ascending);
         }
         public void TableID()
         {
