@@ -1,5 +1,7 @@
 # Supermarket Management System
 
+![观看演示视频](https://live.csdn.net/v/399479?spm=1001.2014.3001.5501)
+
 这里是一个基于 ***SQL Server*** 和 ***C#*** 设计的一个管理系统，仅用于学习。<br>
 说明:关键的窗口设计代码请查看 ***.cs*** 后缀文件。
 > - **.cs**
